@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.herobackground {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/defback.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  position: absolute;
+}
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  width: 40px;
+  padding-left: 10px;
+}
+.logo1 {
+  color: #256345;
+  padding-left: 10px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 100;
+}
+.navigation {
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.login-gtn {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.gtn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 140px;
+  color: #fff;
+  background-image: linear-gradient(to left, #141516, #256345);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+}
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+}
+.content h1 {
+  font-size: 70px;
+  color: #256345;
+}
+.content p {
+  margin: 10px 0 30px;
+  color: #333;
+  animation-delay: 0.5s;
+}
+.content .gtn {
+  padding: 15px 80px;
+  font-size: 15px;
+  animation-delay: 1s;
+}
+.gtn:hover {
+  border-top-right-radius: 60px;
+}
+.foto {
+  width: 280px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.foto.img-aldo {
+  animation-delay: 1.5s;
+}
+
+.img-aldo {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
